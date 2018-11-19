@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://notebookwebservice.mickaelbaron.fr/" xmlns:tns="http://notebookwebservice.mickaelbaron.fr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="addPersonWithComplexType" type="tns:addPersonWithComplexType"/>
+
+  <xs:element name="addPersonWithComplexTypeResponse" type="tns:addPersonWithComplexTypeResponse"/>
+
+  <xs:element name="addPersonWithSimpleType" type="tns:addPersonWithSimpleType"/>
+
+  <xs:element name="getPersonByName" type="tns:getPersonByName"/>
+
+  <xs:element name="getPersonByNameResponse" type="tns:getPersonByNameResponse"/>
+
+  <xs:element name="getPersons" type="tns:getPersons"/>
+
+  <xs:element name="getPersonsResponse" type="tns:getPersonsResponse"/>
+
+  <xs:complexType name="addPersonWithSimpleType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="address" type="xs:string" minOccurs="0"/>
+      <xs:element name="birthyear" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPersonByName">
+    <xs:sequence>
+      <xs:element name="personName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPersonByNameResponse">
+    <xs:sequence>
+      <xs:element name="getPersonResult" type="tns:person" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="person">
+    <xs:sequence>
+      <xs:element name="address" type="xs:string" minOccurs="0"/>
+      <xs:element name="birthyear" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addPersonWithComplexType">
+    <xs:sequence>
+      <xs:element name="newPerson" type="tns:person" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addPersonWithComplexTypeResponse">
+    <xs:sequence>
+      <xs:element name="addPersonWithComplexTypeResult" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPersons">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getPersonsResponse">
+    <xs:sequence>
+      <xs:element name="getPersonsResult" type="tns:person" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
