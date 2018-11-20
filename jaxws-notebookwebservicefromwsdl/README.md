@@ -10,7 +10,7 @@ Le service web développé dans ce dépôt contient quatre opérations qui accep
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 mvn clean package -P url
 ```
 
@@ -20,7 +20,7 @@ Le contrat de description du service web WSDL est stocké dans le répertoire _s
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 mvn clean package -P file
 ```
 
@@ -28,7 +28,7 @@ mvn clean package -P file
 
 * Toujours depuis la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 $ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicefromwsdl.NotebookServiceSOAPPublish
 ...
 WARNING: An illegal reflective access operation has occurred
@@ -40,7 +40,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 > Pour éviter l'avertissement d'un accès par réflexivité de la dépendance _jaxb-impl-x.y.z.jar_ à un module de la JDK, vous pouvez ajouter l'option `com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true`. Cette option désactive une optimisation de performance qui sera supprimée dans la prochaine version de la bibliothèque.
 
-```shellscript
+```bash
 java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicefromwsdl.NotebookServiceSOAPPublish
 ```
 

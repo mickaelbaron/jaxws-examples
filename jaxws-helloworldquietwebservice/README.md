@@ -8,7 +8,7 @@ Le service web développé dans ce dépôt contient deux opérations qui retourn
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 mvn clean package
 ```
 
@@ -16,7 +16,7 @@ mvn clean package
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```java
+```bash
 $ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.helloworldquietwebservice.HelloWorldServiceSOAPPublish
 ...
 WARNING: An illegal reflective access operation has occurred
@@ -28,8 +28,8 @@ WARNING: All illegal access operations will be denied in a future release
 
 > Pour éviter l'avertissement d'un accès par réflexivité de la dépendance _jaxb-impl-x.y.z.jar_ à un module de la JDK, vous pouvez ajouter l'option `com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true`. Cette option désactive une optimisation de performance qui sera supprimée dans la prochaine version de la bibliothèque.
 
-```java
-$ java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.helloworldquietwebservice.HelloWorldServiceSOAPPublish
+```bash
+java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.helloworldquietwebservice.HelloWorldServiceSOAPPublish
 ```
 
 * Depuis un navigateur web, saisir l'URL `http://localhost:8080/helloworldquietwebservice/helloworldquiet?wsdl` pour afficher le contrat WSDL.

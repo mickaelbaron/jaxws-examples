@@ -18,7 +18,7 @@ Le contrat de description du service web WSDL est stocké dans le répertoire _s
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 mvn clean package
 ```
 
@@ -28,7 +28,7 @@ mvn clean package
 
 * Depuis la racine du projet, exécuter la ligne de commmande suivante :
 
-```java
+```bash
 $ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceclient.NotebookServiceClient
 ...
 WARNING: An illegal reflective access operation has occurred
@@ -41,7 +41,7 @@ true
 
 > Pour éviter l'avertissement d'un accès par réflexivité de la dépendance _jaxb-impl-x.y.z.jar_ à un module de la JDK, vous pouvez ajouter l'option `com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true`. Cette option désactive une optimisation de performance qui sera supprimée dans la prochaine version de la bibliothèque.
 
-```shellscript
+```bash
 $ java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceclient.NotebookServiceClient
 ...
 true

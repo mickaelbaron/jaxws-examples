@@ -14,7 +14,7 @@ L’utilisation des services web eBay est soumis à une inscription pour obtenir
 
 * À la racine du projet, exécuter la ligne de commande suivante :
 
-```shellscript
+```bash
 mvn clean package
 ```
 
@@ -22,7 +22,7 @@ mvn clean package
 
 * Toujours depuis la racine du projet, exécuter la ligne de commande suivante :
 
-```java
+```bash
 $ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.ebayfindingwebserviceclient.EBAYFindingWebServiceClient
 ...
 WARNING: An illegal reflective access operation has occurred
@@ -34,7 +34,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 > Pour éviter l'avertissement d'un accès par réflexivité de la dépendance _jaxb-impl-x.y.z.jar_ à un module de la JDK, vous pouvez ajouter l'option `com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true`. Cette option désactive une optimisation de performance qui sera supprimée dans la prochaine version de la bibliothèque.
 
-```java
+```bash
 $ java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.ebayfindingwebserviceclient.EBAYFindingWebServiceClient
 
 SIGNED x2 George R R Martin A Game Of Thrones Comic #10 1st Print Mike S Miller (http://thumbs4.ebaystatic.com/m/mUiI0CAq6spnAo3a1Hm-eQg/140.jpg)
