@@ -10,12 +10,12 @@
 
 	<artifactId>jaxws-helloworldwebservice</artifactId>
 	<packaging>${project.packaging}</packaging>
-	<name>HelloWorldWebService Application</name>
+	<name>jaxws-helloworldwebservice Application</name>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<executions>
 					<execution>
@@ -26,7 +26,6 @@
 							<sei>fr.mickaelbaron.helloworldwebservice.HelloWorldServiceImpl</sei>
 							<genWsdl>true</genWsdl>
 							<keep>true</keep>
-							<executable>${java.home}/bin/wsgen</executable>
 						</configuration>
 					</execution>
 				</executions>

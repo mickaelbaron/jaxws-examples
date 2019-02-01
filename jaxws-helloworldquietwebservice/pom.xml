@@ -11,12 +11,12 @@
 
 	<artifactId>jaxws-helloworldquietwebservice</artifactId>
 	<packaging>jar</packaging>
-	<name>HelloWorldQuietWebService Application</name>
+	<name>jaxws-helloworldquietwebservice Application</name>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<executions>
 					<execution>
@@ -27,7 +27,6 @@
 							<sei>fr.mickaelbaron.helloworldquietwebservice.HelloWorldService</sei>
 							<genWsdl>true</genWsdl>
 							<keep>true</keep>
-							<executable>${java.home}/bin/wsgen</executable>
 						</configuration>
 					</execution>
 				</executions>

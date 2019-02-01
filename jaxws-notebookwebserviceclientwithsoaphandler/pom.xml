@@ -11,10 +11,12 @@
 
 	<artifactId>jaxws-notebookwebserviceclientwithsoaphandler</artifactId>
 	<packaging>jar</packaging>
+	<name>jaxws-notebookwebserviceclientwithsoaphandler Application</name>
+
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<executions>
 					<execution>
@@ -25,7 +27,6 @@
 							<packageName>fr.mickaelbaron.notebookwebserviceclientwithsoaphandler</packageName>
 							<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 							<keep>true</keep>
-							<executable>${java.home}/bin/wsimport</executable>
 							<wsdlDirectory>${project.basedir}/src/wsdl</wsdlDirectory>
 						</configuration>
 					</execution>

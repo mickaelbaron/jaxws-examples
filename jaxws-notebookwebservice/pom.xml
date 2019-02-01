@@ -11,12 +11,12 @@
 
 	<artifactId>jaxws-notebookwebservice</artifactId>
 	<packaging>jar</packaging>
-	<name>NotebookWebService Application</name>
+	<name>jaxws-notebookwebservice Application</name>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<executions>
 					<execution>
@@ -27,7 +27,6 @@
 							<sei>fr.mickaelbaron.notebookwebservice.NotebookServiceImpl</sei>
 							<genWsdl>true</genWsdl>
 							<keep>true</keep>
-							<executable>${java.home}/bin/wsgen</executable>
 						</configuration>
 					</execution>
 				</executions>

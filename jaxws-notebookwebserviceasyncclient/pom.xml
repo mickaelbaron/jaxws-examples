@@ -11,11 +11,12 @@
 
 	<artifactId>jaxws-notebookwebserviceasyncclient</artifactId>
 	<packaging>jar</packaging>
-	<name>NotebookWebServiceAsyncClient Maven App</name>
+	<name>jaxws-notebookwebserviceasyncclient Application</name>
+	
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>com.sun.xml.ws</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
 				<executions>
 					<execution>
@@ -26,7 +27,6 @@
 							<packageName>fr.mickaelbaron.notebookwebserviceasyncclient</packageName>
 							<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 							<keep>true</keep>
-							<executable>${java.home}/bin/wsimport</executable>
 							<wsdlUrls>
 								<wsdlUrl>http://localhost:8080/notebookwebservice/notebook?wsdl</wsdlUrl>
 							</wsdlUrls>

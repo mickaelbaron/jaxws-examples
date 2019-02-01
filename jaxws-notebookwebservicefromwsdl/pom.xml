@@ -11,12 +11,13 @@
 
 	<artifactId>jaxws-notebookwebservicefromwsdl</artifactId>
 	<packaging>jar</packaging>
-	<name>NotebookWebServiceFromWSDL Application</name>
+	<name>jaxws-notebookwebservicefromwsdl Application</name>
+
 	<build>
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
+					<groupId>com.sun.xml.ws</groupId>
 					<artifactId>jaxws-maven-plugin</artifactId>
 					<executions>
 						<execution>
@@ -27,7 +28,6 @@
 								<packageName>fr.mickaelbaron.notebookwebservicefromwsdl</packageName>
 								<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 								<keep>true</keep>
-								<executable>${java.home}/bin/wsimport</executable>
 							</configuration>
 						</execution>
 					</executions>
@@ -41,7 +41,7 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
+						<groupId>com.sun.xml.ws</groupId>
 						<artifactId>jaxws-maven-plugin</artifactId>
 						<executions>
 							<execution>
@@ -62,7 +62,7 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
+						<groupId>com.sun.xml.ws</groupId>
 						<artifactId>jaxws-maven-plugin</artifactId>
 						<executions>
 							<execution>
