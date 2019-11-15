@@ -32,6 +32,6 @@ WARNING: All illegal access operations will be denied in a future release
 java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/classes:target/dependency/*" fr.mickaelbaron.helloworldquietwebservice.HelloWorldServiceSOAPPublish
 ```
 
-* Depuis un navigateur web, saisir l'URL `http://localhost:8080/helloworldquietwebservice/helloworldquiet?wsdl` pour afficher le contrat WSDL.
+* Depuis un navigateur web, saisir l'URL `http://localhost:8080/helloworldquietwebservice/helloworldquiet?wsdl` pour afficher le contrat WSDL
 
 Pour exécuter les opérations du service web étendu, vous pouvez utiliser un outil comme SOAP-UI : <https://www.soapui.org/>.

@@ -38,7 +38,7 @@ java -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -cp "target/clas
 
 ### Comment compiler
 
-* À la racine du projet, exécuter la ligne de commande suivante pour générer le fichier _.war_ :
+* À la racine du projet, exécuter la ligne de commande suivante pour générer le fichier _.war_
 
 ```bash
 mvn clean package -P war
@@ -46,20 +46,20 @@ mvn clean package -P war
 
 ### Comment déployer
 
-* Exécuter la ligne de commande suivante pour télécharger l'image Docker correspondant à la version 9 de Tomcat s'exécutant sous un JRE 10
+* Exécuter la ligne de commande suivante pour télécharger l'image Docker correspondant à la version 9 de Tomcat s'exécutant sous un JRE 11
 
 ```bash
-docker pull tomcat:9.0.12-jre10-slim
+docker pull tomcat:9-jre11-slim
 ```
 
 * Exécuter la ligne de commande suivante permettant de créer un conteneur Docker
 
 ```bash
-docker run --rm --name helloworldservice-tomcat -v $(pwd)/target/helloworldwebservice.war:/usr/local/tomcat/webapps/helloworldwebservice.war -it -p 8080:8080 tomcat:9.0.12-jre10-slim
+docker run --rm --name helloworldservice-tomcat -v $(pwd)/target/helloworldwebservice.war:/usr/local/tomcat/webapps/helloworldwebservice.war -it -p 8080:8080 tomcat:9-jre11-slim
 ```
 
 ## Tester
 
-* Depuis un navigateur web, saisir l'URL `http://localhost:8080/helloworldwebservice/helloworld?wsdl` pour afficher le contrat WSDL.
+* Depuis un navigateur web, saisir l'URL `http://localhost:8080/helloworldwebservice/helloworld?wsdl` pour afficher le contrat WSDL
 
-Pour exécuter les opérations du service web étendu, vous pouvez utiliser un outil comme SOAP-UI : <https://www.soapui.org/>.
+> Pour exécuter les opérations du service web étendu, vous pouvez utiliser un outil comme SOAP-UI : <https://www.soapui.org/>.
