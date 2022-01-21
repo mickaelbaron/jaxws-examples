@@ -1,6 +1,6 @@
 package fr.mickaelbaron.helloworldquietwebservice;
 
-import javax.jws.WebService;
+import jakarta.jws.WebService;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)

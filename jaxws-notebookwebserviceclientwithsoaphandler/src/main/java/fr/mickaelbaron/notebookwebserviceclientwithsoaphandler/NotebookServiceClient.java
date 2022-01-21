@@ -3,8 +3,8 @@ package fr.mickaelbaron.notebookwebserviceclientwithsoaphandler;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.ws.BindingProvider;
-import javax.xml.ws.handler.Handler;
+import jakarta.xml.ws.BindingProvider;
+import jakarta.xml.ws.handler.Handler;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)

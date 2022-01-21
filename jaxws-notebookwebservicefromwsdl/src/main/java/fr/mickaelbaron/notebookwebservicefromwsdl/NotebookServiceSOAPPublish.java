@@ -1,6 +1,6 @@
 package fr.mickaelbaron.notebookwebservicefromwsdl;
 
-import javax.xml.ws.Endpoint;
+import jakarta.xml.ws.Endpoint;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)

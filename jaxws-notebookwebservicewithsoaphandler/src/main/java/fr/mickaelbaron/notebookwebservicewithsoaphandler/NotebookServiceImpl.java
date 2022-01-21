@@ -1,7 +1,7 @@
 package fr.mickaelbaron.notebookwebservicewithsoaphandler;
 
-import javax.jws.HandlerChain;
-import javax.jws.WebService;
+import jakarta.jws.HandlerChain;
+import jakarta.jws.WebService;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)

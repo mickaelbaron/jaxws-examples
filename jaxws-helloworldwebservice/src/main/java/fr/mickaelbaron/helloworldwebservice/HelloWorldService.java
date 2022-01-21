@@ -1,9 +1,9 @@
 package fr.mickaelbaron.helloworldwebservice;
 
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
-import javax.jws.WebResult;
-import javax.jws.WebService;
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebParam;
+import jakarta.jws.WebResult;
+import jakarta.jws.WebService;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)

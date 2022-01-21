@@ -1,7 +1,7 @@
 package fr.mickaelbaron.notebookwebserviceasyncclient;
 
-import javax.xml.ws.AsyncHandler;
-import javax.xml.ws.Response;
+import jakarta.xml.ws.AsyncHandler;
+import jakarta.xml.ws.Response;
 
 /**
  * @author Mickael BARON (baron.mickael@gmail.com)
