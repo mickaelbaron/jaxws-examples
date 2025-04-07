@@ -25,7 +25,8 @@
 						</goals>
 						<configuration>
 							<packageName>fr.mickaelbaron.notebookwebserviceclientwithsoaphandler</packageName>
-							<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+							<sourceDestDir>
+								${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 							<keep>true</keep>
 							<wsdlDirectory>${project.basedir}/src/wsdl</wsdlDirectory>
 						</configuration>

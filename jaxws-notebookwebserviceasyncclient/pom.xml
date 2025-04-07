@@ -12,7 +12,7 @@
 	<artifactId>jaxws-notebookwebserviceasyncclient</artifactId>
 	<packaging>jar</packaging>
 	<name>jaxws-notebookwebserviceasyncclient Application</name>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -25,7 +25,8 @@
 						</goals>
 						<configuration>
 							<packageName>fr.mickaelbaron.notebookwebserviceasyncclient</packageName>
-							<sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+							<sourceDestDir>
+								${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
 							<keep>true</keep>
 							<wsdlUrls>
 								<wsdlUrl>http://localhost:8080/notebookwebservice/notebook?wsdl</wsdlUrl>

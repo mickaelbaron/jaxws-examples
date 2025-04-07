@@ -6,18 +6,18 @@ Le service web développé dans ce dépôt contient quatre opérations qui accep
 
 ## Comment compiler
 
-* Lancer la compilation et la création du fichier _.jar_ :
+- Lancer la compilation et la création du fichier _.jar_ :
 
 ```bash
-$ mvn clean package
+mvn clean package
 ```
 
 ## Comment exécuter
 
-* Toujours depuis la racine du projet, exécuter la ligne de commmande suivante :
+- Toujours depuis la racine du projet, exécuter la ligne de commmande suivante :
 
 ```bash
-$ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicewithsoaphandler.NotebookServiceSOAPPublish
+java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicewithsoaphandler.NotebookServiceSOAPPublish
 ```
 
-* Pour vérifier le fonctionnement de l'intercepteur, invoquer une opération du service web étendu exposé à cette adresse : http://localhost:8080/notebookwebservicewithsoaphandler/notebook (utiliser par exemple SOAP-UI : <https://www.soapui.org/>).
+- Pour vérifier le fonctionnement de l'intercepteur, invoquer une opération du service web étendu exposé à cette adresse : <http://localhost:8080/notebookwebservicewithsoaphandler/notebook> (utiliser par exemple SOAP-UI : <https://www.soapui.org/>).

@@ -9,25 +9,25 @@ Le service web appelé fait référence au projet [jaxws-notebookwebservice](htt
 Le contrat de description du service web WSDL est stocké dans le répertoire _src/wsdl_. Pour modifier l'adresse d'invocation du service web, modifier la valeur de l'attribut `location` :
 
 ```xml
-  ...
-    <port name="NotebookPort" binding="tns:NotebookPortBinding">
-      <soap:address location="http://localhost:8080/notebookwebservice/notebook"/>
-    </port>
-  ...
+...
+  <port name="NotebookPort" binding="tns:NotebookPortBinding">
+    <soap:address location="http://localhost:8080/notebookwebservice/notebook"/>
+  </port>
+...
 ```
 
-* Lancer la compilation et la création du fichier _.jar_ :
+- Lancer la compilation et la création du fichier _.jar_ :
 
 ```bash
-$ mvn clean package
+mvn clean package
 ```
 
 ## Comment exécuter
 
-* Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier README.md associé au dépôt pour plus de détails.
+- Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier _README.md_ associé au dépôt pour plus de détails.
 
-* Depuis la racine du projet, exécuter la ligne de commmande suivante :
+- Depuis la racine du projet, exécuter la ligne de commmande suivante :
 
 ```bash
-$ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceclient.NotebookServiceClient
+java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceclient.NotebookServiceClient
 ```

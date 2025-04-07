@@ -6,32 +6,32 @@ Le service web développé dans ce dépôt contient quatre opérations qui accep
 
 ## Comment compiler (WSDL fourni à partir d'une URL)
 
-* Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier README.md associé au dépôt pour plus de détails.
+- Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier README.md associé au dépôt pour plus de détails.
 
-* Lancer la compilation et la génération des fichiers nécessaire :
+- Lancer la compilation et la génération des fichiers nécessaire :
 
 ```bash
-$ mvn clean compile -P url
+mvn clean compile -P url
 ```
 
 ## Comment compiler (WSDL fourni à partir d'un fichier)
 
 Le contrat de description du service web WSDL est stocké dans le répertoire _src/wsdl_.
 
-* À la racine du projet, exécuter la ligne de commande suivante :
+- À la racine du projet, exécuter la ligne de commande suivante :
 
 ```bash
-$ mvn clean package -P file
+mvn clean package -P file
 ```
 
 ## Comment exécuter
 
-* Toujours depuis la racine du projet, exécuter la ligne de commande suivante :
+- Toujours depuis la racine du projet, exécuter la ligne de commande suivante :
 
 ```bash
-$ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicefromwsdl.NotebookServiceSOAPPublish
+java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebservicefromwsdl.NotebookServiceSOAPPublish
 ```
 
-* Depuis un navigateur web, saisir l'URL `http://localhost:8080/notebookwebservicefromwsdl/notebook?wsdl` pour afficher le contrat WSDL.
+- Depuis un navigateur web, saisir l'URL <http://localhost:8080/notebookwebservicefromwsdl/notebook?wsdl> pour afficher le contrat WSDL.
 
 Pour exécuter les opérations du service web étendu, vous pouvez utiliser un outil comme SOAP-UI : <https://www.soapui.org/>.

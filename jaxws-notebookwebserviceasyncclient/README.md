@@ -6,20 +6,20 @@ Le service web appelé fait référence au projet [jaxws-notebookwebservice](htt
 
 ## Comment compiler
 
-* Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier README.md associé au dépôt pour plus de détails. Pour information, l'adresse d'invocation du service web sera fixée à `http://localhost:8080/notebookwebservice/notebook`.
+- Compiler et exécuter le projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice). Voir le fichier _README.md_ associé au dépôt pour plus de détails. Pour information, l'adresse d'invocation du service web sera fixée à <http://localhost:8080/notebookwebservice/notebook>.
 
-* Lancer la compilation et la création du fichier _.jar_ :
+- Lancer la compilation et la création du fichier _.jar_ :
 
 ```bash
-$ mvn clean package
+mvn clean package
 ```
 
 ## Comment exécuter
 
 > Nous supposons que le service web étendu du projet [jaxws-notebookwebservice](https://github.com/mickaelbaron/jaxws-notebookwebservice) est toujours en exécution.
 
-* Depuis la racine du projet, exécuter la ligne de commmande suivante :
+- Depuis la racine du projet, exécuter la ligne de commmande suivante :
 
 ```bash
-$ java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceasyncclient.NotebookServiceAsyncClient
+java -cp "target/classes:target/dependency/*" fr.mickaelbaron.notebookwebserviceasyncclient.NotebookServiceAsyncClient
 ```
